@@ -21,6 +21,7 @@ Virt-HR also allows candidates, universities, and Recruiters to sign transaction
 replace your rpc link on truffle-config.js
 
 ## Smart contract 
+ compile the smart contracts
  truffle comiple
 
  truffle migrate --network mumbai
