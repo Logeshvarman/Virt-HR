@@ -43,17 +43,13 @@ Education Research - This content is controlled by the employee's written form (
 
 ## Organization 
 
--This smart contract is for organizations. Organizations can use it to identify employees' skills, work experience, education, certification. The smart contract contains:
+This smart contract is for organizations. Organizations can use it to identify employees' skills, work experience, education, certification. The smart contract contains:
 Organization name.
--Contains a list of current employees of the organization who are certified to recognize the skills, work, and education of other employees. Only current employees, not former employees, are entitled to do so.
--It includes the names of all human resources, talent acquisition teams, and all employees working in the organization. It will be able to edit the job title of
+Contains a list of current employees of the organization who are certified to recognize the skills, work, and education of other employees. Only current employees, not former employees, are entitled to do so.
+It includes the names of all human resources, talent acquisition teams, and all employees working in the organization. It will be able to edit the job title of
 employees.
-- It will be possible to give certificates to employees for their achievements to be placed on their profiles. According to the job description,
+It will be possible to give certificates to employees for their achievements to be placed on their profiles. According to the job description,
 will have the functionality to search for employees on the blockchain and invite them to interview.
-
-
-
-
 
 
 ## Testing the app
