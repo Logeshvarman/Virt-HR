@@ -1,4 +1,4 @@
-# Vir-HR1
+# Virt-HR1
 
  Virt-HR is an network connecting Students, Colleges, and Recruiters . Virt-HR is a blockchain-based system of verified education, skills, and personal career information. 
 
@@ -6,7 +6,14 @@ Virt-HR is creating value for the entire ecosystem through the Trust as a Servic
 
 Virt-HR also allows candidates, universities, and Recruiters to sign transactions onto a blockchain network.
 
+## stacks
 
+
+**Front-end**  : React Js, web3 API
+
+**Web3**  : Solidity, EVM , Polygon
+
+**Backend**  : Nodejs ,Alchmey RPC, Firebase
 
 ## Testing the app
  git clone the project then run
