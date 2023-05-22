@@ -16,7 +16,7 @@ Virt-HR also allows candidates, universities, and Recruiters to sign transaction
     npm install
 
 
-#  RPC config
+##  RPC config
 
 replace your rpc link on truffle-config.js
 
