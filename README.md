@@ -20,7 +20,7 @@ Virt-HR also allows candidates, universities, and Recruiters to sign transaction
 
 ## No Role
 
-A user having a account can send he admins his/her profile and cha with them as well.
+A user having a account can send he admins his/her profile and chat with them as well.
 He can request for any role employee or organization.
 
 ## Admin
