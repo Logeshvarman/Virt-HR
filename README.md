@@ -21,7 +21,7 @@ Virt-HR also allows candidates, universities, and Recruiters to sign transaction
 ## No Role
 
 A user having a account can send he admins his/her profile and chat with them as well.
-He can request for any role employee or organization.
+He/she can request for any role candidate or organization.
 
 ## Admin
 
@@ -33,8 +33,8 @@ Can revove/reassign roles of users.
 
 ## Candidate
 
-This smart contract is for the candidate and stores information about the employee:
-employee name, full approval, all listed skills and their contract (clauses 1-10).
+This smart contract is for the candidate and stores information about the candidate:
+candidate name, full approval, all listed skills and their contract (clauses 1-10).
 Authentication - There will be 2 types of authentication and unauthenticated. A certificate is considered verified when it is validated on the blockchain by the organization that issued it.
 Event History - It will have fields like (Organization Name, Name, Details etc.) and there will be two types: Checked and Unchecked.
 If the organization confirms it on the blockchain, it is considered proof.
