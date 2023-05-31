@@ -12,7 +12,7 @@ Virt-HR also allows candidates, universities, and Recruiters to sign transaction
 
 **Front-end**  : React Js, web3 API
 
-**Web3**  : Solidity, EVM , Polygon
+**Web3**  : Solidity , Polygon
 
 **Backend**  : Nodejs ,Alchmey RPC, Firebase
 
