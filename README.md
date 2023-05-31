@@ -1,5 +1,4 @@
-# Virt-HR1 
-(still in development)
+# Virt-HR1
 
  Virt-HR is an network connecting Students, Colleges, and Recruiters . Virt-HR is a blockchain-based system of verified education, skills, and personal career information. 
 
