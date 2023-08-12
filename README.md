@@ -67,9 +67,9 @@ replace your rpc link on truffle-config.js
  compile the smart contracts
 
 
- truffle compile
+npx truffle compile
 
- truffle migrate --network mumbai
+npx truffle migrate --network mumbai
 
 ## Testing
 
