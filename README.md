@@ -52,7 +52,7 @@ will have the functionality to search for employees on the blockchain and invite
 
 
 ## Testing the app
- git clone the project then run
+git clone the project then run
     
     node v16.16.0 is recommended
     
@@ -64,11 +64,11 @@ will have the functionality to search for employees on the blockchain and invite
 replace your rpc link on truffle-config.js
 
 ## Smart contract 
- compile the smart contracts
+compile the smart contracts
+  
+   npx truffle compile
 
- truffle compile
-
- truffle migrate --network mumbai
+   npx truffle migrate --network mumbai
 
 ## Testing
 
