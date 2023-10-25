@@ -97,6 +97,7 @@ import { flowRight } from "lodash";
                 inverted
               >
              <div
+             as={Link} to="/" animation="overlay"
                   style={{
                     
                     display: "flex",
@@ -214,7 +215,7 @@ import { flowRight } from "lodash";
                 <div style={{marginTop:"30px"}}>
                 <Item as={Link} to="/" name="Info Page">
                   <i className="users icon"></i>
-                  endorse-skill
+                  Info Page
                 </Item>
                 
                 <Item as={Link} to="/endorse-skill" name="endorseskill">
