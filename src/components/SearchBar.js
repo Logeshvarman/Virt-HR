@@ -71,11 +71,8 @@ export default class SearchBar extends Component {
 
   searchOptions = [
     { key: "1", text: "Employee", value: "1" },
-    {
-      key: "2",
-      text: "Skill",
-      value: "2",
-    },
+    {key: "2",text: "Skill",value: "2"},
+    {key:"3",test:"Work Experiences",value:"3"},
   ];
   render() {
     const { isLoading, value, results } = this.state;
@@ -83,7 +80,8 @@ export default class SearchBar extends Component {
       <>
         <Search
           fluid
-          aligned="center"
+          aligned="right"
+
           loading={isLoading}
           onResultSelect={this.handleResultSelect}
           onSearchChange={_.debounce(this.handleSearchChange, 500, {

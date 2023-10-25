@@ -24,6 +24,7 @@ import NotificationsEmployee from "./pages/Employee/Notifications";
 import NotificationsOrg from "./pages/OrganizationEndorser/Notifications";
 import LoadComp from "./components/LoadComp";
 
+
 function App() {
   const [isMeta, setisMeta] = useState(false);
   const [isEmployee, setisEmployee] = useState(false);
@@ -90,7 +91,7 @@ function App() {
         />
         <Route path="/create-user" exact component={AdminPageCreate} />
         <Route path="/notifications" exact component={NotificationsAdmin} />
-      </Switch>
+      </Switch>  
     );
   };
 
