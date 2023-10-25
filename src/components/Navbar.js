@@ -150,6 +150,7 @@ import { flowRight } from "lodash";
                   style={{
                     
                     display: "flex",
+  
                     justifyItems: "center",
                     alignItems: "center",
                     justifyContent: "space-between",
