@@ -4,6 +4,8 @@ import EmployeeCard from "../../components/EmployeeCard";
 import "./Admin.css";
 import Admin from "../../abis/Admin.json";
 import LoadComp from "../../components/LoadComp";
+// import { Card } from 'semantic-ui-react';
+
 
 export default class AllEmployees extends Component {
   state = {
@@ -41,10 +43,17 @@ export default class AllEmployees extends Component {
       <div className="admin">
         <h2 className="card-heading">All Registered Candidate</h2>
         <br />
-        {this.state.employees?.map((employee, index) => (
-          <EmployeeCard key={index} employeeContractAddress={employee} />
-        ))}
         <br />
+        <div className="card-grid">
+        {this.state.employees?.map((employee, index) => (
+          
+            <EmployeeCard key={index} employeeContractAddress={employee} />
+          
+          
+        ))}
+        
+        <br />
+        </div>
       </div>
     );
   }

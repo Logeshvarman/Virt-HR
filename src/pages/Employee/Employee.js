@@ -181,6 +181,7 @@ export default class EmployeePage extends Component {
       <LoadComp />
     ) : (
       <div>
+        
         <Grid>
           <Grid.Row>
             <Grid.Column width={6}>
@@ -399,6 +400,7 @@ export default class EmployeePage extends Component {
         
 
         </Grid>
+        
       </div>
     );
   }

@@ -7,9 +7,8 @@
   import SearchBar from "./SearchBar";
   import GenererateQR from "./GenererateQR";
   import {Item } from "semantic-ui-react";
-import { flowRight } from "lodash";
   class Navbar extends Component {
-    state = { activeItem: "home", role: -1, account: "", showQr: false };
+    state = { activeItem: "home", role: -1, account: "", showQr: false};
 
     componentDidMount = async () => {
       const web3 = await window.web3;
@@ -46,11 +45,10 @@ import { flowRight } from "lodash";
     closeQRModal = () => {
       this.setState({ showQr: false });
     };
-
+    
     render() {
       const { activeItem } = this.state;
       const roles = ["Admin", "Candidate", "Organization"];
-
       return (
         <>
           <GenererateQR
@@ -62,7 +60,6 @@ import { flowRight } from "lodash";
             style={{
               borderRadius: "0",
               background: "#1e2022ea",
-
               boxShadow: "0 0 5px 0px white",
             }}
           >
@@ -117,7 +114,7 @@ import { flowRight } from "lodash";
                 </div>
                 <div style={{marginTop:"30px"}}>
                 <Item as={Link} to="/" name="Candidates">
-                  <i className="users icon"></i>
+                  <i className="user icon"></i>
                   Candidates
                 </Item>
                 
@@ -130,7 +127,7 @@ import { flowRight } from "lodash";
                   Create User
                 </Item>
                 <Item as={Link} to="/notifications" name="Ping">
-                  <i className="bell icon"></i>
+                  <i className="chat icon"></i>
                   Ping
                 </Item>
                 </div>
@@ -173,11 +170,11 @@ import { flowRight } from "lodash";
                 </Item>
                 
                 <Item as={Link} to="/update-profile" name="update-profile">
-                  <i className="building icon"></i>
+                  <i className="user plus icon"></i>
                   update-profile
                 </Item>
                 <Item as={Link} to="/notifications" name="Ping">
-                  <i className="bell icon"></i>
+                  <i className="chat icon"></i>
                   Ping
                 </Item>
                 </div>
@@ -228,7 +225,7 @@ import { flowRight } from "lodash";
                  endorse-section
                 </Item>
                 <Item as={Link} to="/notifications" name="Ping">
-                  <i className="bell icon"></i>
+                  <i className="chat icon"></i>
                   Ping
                 </Item>
                 </div>
@@ -256,20 +253,22 @@ import { flowRight } from "lodash";
 
               <Menu.Item position="right">
                 <Label style={{ color: "black", background: "white" }}>
-                  {this.state.role === -1 ? "No Role" : roles[this.state.role]}
+                  <a
+                  style={{ cursor: "pointer"}}
+                  onClick={() => {if (this.state.showAccount) {
+                    this.setState({ showAccount: false });
+                  } else {
+                    this.setState({ showAccount: true });
+                  } }}
+                  >
+                    {this.state.role === -1 ? "No Role" : roles[this.state.role]}
+                  </a>
                 </Label>
                 &nbsp;&nbsp;&nbsp;
-                <div style={{ color: "lightgray" }}>
+                <div style={{ color: "lightgray" }} hidden={!this.state.showAccount}>
                   <em>
                     <small>{this.state.account}</small>
                   </em>
-                  &nbsp;&nbsp;&nbsp;
-                  <Icon
-                    name="qrcode"
-                    size="large"
-                    style={{ color: "white", cursor: "pointer" }}
-                    onClick={() => this.setState({ showQr: true })}
-                  />
                 </div>
               </Menu.Item>
             </Menu>

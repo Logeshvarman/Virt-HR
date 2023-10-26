@@ -153,3 +153,9 @@
   transform: scale(1.01, 1.01);
   background: rgba(31, 30, 30, 0.1);
 }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}

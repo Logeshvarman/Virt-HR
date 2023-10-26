@@ -1,5 +1,5 @@
 .employee-card {
-  width: 70% !important;
+  width: 80% !important;
   margin-left: auto !important;
   margin-right: auto !important;
   background: white !important;
@@ -18,13 +18,12 @@
   display: flex !important;
   justify-content: space-between !important;
   flex-wrap: wrap !important;
-  color: rgb(0, 0, 0) !important;
+  color: rgb(0, 0, 0) !important; 
 }
 
 .employee-card > .content > .header > small {
   font-size: 12px !important;
   font-weight: 600 !important;
-  /* font-style: italic; */
 }
 
 @media only screen and (max-width: 800px) {

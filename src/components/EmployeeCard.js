@@ -177,6 +177,8 @@ class EmployeeCard extends Component {
             </p>
           </div>
           <br />
+          {this.state.readmore ? (
+            <div>    
           <div>
             <em>Skills:</em>
             <div className="skill-holder">
@@ -194,8 +196,7 @@ class EmployeeCard extends Component {
             </div>
           </div>
           <br />
-          {this.state.readmore ? (
-            <div>
+          
               <div>
                 <em>Education:</em>
                 <div className="education">

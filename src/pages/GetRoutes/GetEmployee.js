@@ -169,7 +169,7 @@ export default class GetEmployee extends Component {
     return this.state.loadcomp ? (
       <LoadComp />
     ) : (
-      <div>
+      <div className="griddiv">
         <Grid>
           <Grid.Row>
             <Grid.Column width={6}>

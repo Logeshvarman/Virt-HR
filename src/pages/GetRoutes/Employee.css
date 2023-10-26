@@ -6,6 +6,10 @@
   color: white !important;
   width: 100% !important;
 }
+.griddiv {
+  justify-content: center;
+  display: flex;
+}
 
 .personal-info > .content > .header {
   display: flex !important;
