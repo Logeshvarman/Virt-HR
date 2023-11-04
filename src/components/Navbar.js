@@ -5,8 +5,8 @@
   import Admin from "../abis/Admin.json";
   import { Link } from "react-router-dom";
   import SearchBar from "./SearchBar";
-  import GenererateQR from "./GenererateQR";
   import {Item } from "semantic-ui-react";
+  import "./navbar.css";
   class Navbar extends Component {
     state = { activeItem: "home", role: -1, account: "", showQr: false};
 
@@ -45,22 +45,19 @@
     closeQRModal = () => {
       this.setState({ showQr: false });
     };
-    
+
+
     render() {
       const { activeItem } = this.state;
       const roles = ["Admin", "Candidate", "Organization"];
       return (
         <>
-          <GenererateQR
-            isOpen={this.state.showQr}
-            closeQRModal={this.closeQRModal}
-          />
           <Segment
             inverted
             style={{
               borderRadius: "0",
-              background: "#1e2022ea",
-              boxShadow: "0 0 5px 0px white",
+              boxShadow: "0 0 5px 0px black",
+              background: "#F5F7FF",
             }}
           >
             <Menu
@@ -83,8 +80,9 @@
               >
               <SearchBar />
               </Menu.Item>
+
               {this.state.role === 0 && (
-              <Sidebar
+             <Sidebar
                 as={Menu}
                 animation="overlay"
                 width="thin"
@@ -92,6 +90,9 @@
                 icon="labeled"
                 vertical
                 inverted
+                style={{
+                  background:"#111643",
+                }}
               >
              <div
              as={Link} to="/" animation="overlay"
@@ -103,23 +104,23 @@
                     justifyContent: "space-between",
                     height: "50px",
                     width: "150px",
-                    borderRadius: "100%",
+                    borderRadius: "90%",
                     padding: "25px",
                     marginBottom: "-5px",
-                    marginTop: "12px  "
-                    
+                    marginTop: "12px  ",
                   }}
                 >
                   <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
                 </div>
-                <div style={{marginTop:"30px"}}>
-                <Item as={Link} to="/" name="Candidates">
-                  <i className="user icon"></i>
+                
+                <div  style={{marginTop:"20px",}}>
+                <Item as={Link} to="/" name="Candidates" className="sidebar-item">
+                  <i className="user circle icon"></i>
                   Candidates
                 </Item>
                 
                 <Item as={Link} to="/all-organization-endorser" name="Organisation">
-                  <i className="building icon"></i>
+                  <i className="id card outline icon"></i>
                   Organisation
                 </Item>
                 <Item as={Link} to="/create-user" name="Create User">
@@ -127,14 +128,14 @@
                   Create User
                 </Item>
                 <Item as={Link} to="/notifications" name="Ping">
-                  <i className="chat icon"></i>
+                  <i className="envelope outline icon"></i>
                   Ping
                 </Item>
                 </div>
               </Sidebar>
-            )}
+             )}
 
-           {this.state.role === 1 && (
+             {this.state.role === 1 && (
                 <Sidebar
                 as={Menu}
                 animation="overlay"
@@ -144,11 +145,9 @@
                 vertical
                 inverted
               >
-             <div
-                  style={{
-                    
+               <div
+                  style={{ 
                     display: "flex",
-  
                     justifyItems: "center",
                     alignItems: "center",
                     justifyContent: "space-between",
@@ -158,23 +157,22 @@
                     padding: "25px",
                     marginBottom: "-5px",
                     marginTop: "12px  "
-                    
                   }}
                 >
                   <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
                 </div>
                 <div style={{marginTop:"30px"}}>
                 <Item as={Link} to="/" name="Profile">
-                  <i className="users icon"></i>
+                  <i className="user circle icon"></i>
                   Profile
                 </Item>
                 
                 <Item as={Link} to="/update-profile" name="update-profile">
-                  <i className="user plus icon"></i>
+                  <i className="edit outline icon"></i>
                   update-profile
                 </Item>
                 <Item as={Link} to="/notifications" name="Ping">
-                  <i className="chat icon"></i>
+                  <i className="envelope outline icon"></i>
                   Ping
                 </Item>
                 </div>
@@ -211,7 +209,7 @@
                 </div>
                 <div style={{marginTop:"30px"}}>
                 <Item as={Link} to="/" name="Info Page">
-                  <i className="users icon"></i>
+                  <i className="address book icon"></i>
                   Info Page
                 </Item>
                 
@@ -225,7 +223,7 @@
                  endorse-section
                 </Item>
                 <Item as={Link} to="/notifications" name="Ping">
-                  <i className="chat icon"></i>
+                  <i className="envelope outline icon"></i>
                   Ping
                 </Item>
                 </div>
@@ -233,22 +231,49 @@
               )}
 
               {this.state.role === -1 && (
-                <>
-                  <Menu.Item
-                    as={Link}
-                    to="/"
-                    name="Request Admin For Role"
-                    active={activeItem === "Request Admin For Role"}
-                    onClick={this.handleItemClick}
-                  />
-                  <Menu.Item
-                    as={Link}
-                    to="/notifications"
-                    name="Ping"
-                    active={activeItem === "Notifications"}
-                    onClick={this.handleItemClick}
-                  />
-                </>
+                
+                <Sidebar
+                as={Menu}
+                animation="overlay"
+                width="thin"
+                visible
+                icon="labeled"
+                vertical
+                inverted
+              >
+             <div
+                  style={{
+                    
+                    display: "flex",
+                    justifyItems: "center",
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    height: "50px",
+                    width: "150px",
+                    borderRadius: "100%",
+                    padding: "25px",
+                    marginBottom: "-5px",
+                    marginTop: "12px  "
+                    
+                  }}
+                >
+                  <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
+                </div>
+                <div style={{marginTop:"30px"}}>
+               
+                
+                <Item as={Link} to="/" name="Request">
+                  <i className="add user icon"></i>
+                  Request
+                </Item>
+
+                <Item as={Link} to="/notifications" name="Ping">
+                  <i className="envelope outline icon"></i>
+                 Ping
+                </Item>
+                
+                </div>
+               </Sidebar>
               )} 
 
               <Menu.Item position="right">
@@ -265,7 +290,7 @@
                   </a>
                 </Label>
                 &nbsp;&nbsp;&nbsp;
-                <div style={{ color: "lightgray" }} hidden={!this.state.showAccount}>
+                <div style={{ color: "lightblue" }} hidden={!this.state.showAccount}>
                   <em>
                     <small>{this.state.account}</small>
                   </em>
@@ -277,5 +302,6 @@
       );
     }
   }
-
+  
+ 
   export default withRouter(Navbar);

@@ -89,6 +89,7 @@ export default class SearchBar extends Component {
           })}
           results={results}
           value={value}
+          placeholder="Search"
           style={{
             minWidth: "300px",
           }}

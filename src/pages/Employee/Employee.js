@@ -280,7 +280,7 @@ export default class EmployeePage extends Component {
                   <Card.Header>Competetive Platform Ratings</Card.Header>
                   <CodeforcesGraph />
                 </Card.Content>
-              </Card>
+            </Card>
             
               <Card className="employee-des">
                 <Card.Content>

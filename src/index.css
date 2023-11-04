@@ -10,7 +10,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* background:white ;  */
   color: #ff5e00 !important;
-  background-image: linear-gradient(to right, #09203f, #537895) !important;
+  background-image: linear-gradient(to bottom, #537895, #09203f) !important;
   
 }
 
