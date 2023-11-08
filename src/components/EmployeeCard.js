@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
-import { Card } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
 import Employee from "../abis/Employee.json";
 import "./EmployeeCard.css";
 import LoadComp from "./LoadComp";
@@ -158,6 +158,7 @@ class EmployeeCard extends Component {
         <Card.Content>
           <Card.Header onClick={this.toEmployee} style={{ cursor: "pointer" }}>
             <span>{this.state.employeedata?.name}</span>
+            <br/>
             <small>{this.state.employeedata.ethAddress}</small>
           </Card.Header>
           <br></br>
@@ -179,7 +180,7 @@ class EmployeeCard extends Component {
           <br />
           {this.state.readmore ? (
             <div>    
-          <div>
+            <div>
             <em>Skills:</em>
             <div className="skill-holder">
               {this.state.skills?.map((skill, index) => (

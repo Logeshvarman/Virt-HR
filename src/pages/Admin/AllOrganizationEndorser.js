@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import Admin from "../../abis/Admin.json";
 import LoadComp from "../../components/LoadComp";
 import OrgEndCard from "../../components/OrgEndCard";
+import "./Admin.css";
 
 export default class AllOrganizationEndorser extends Component {
   state = {
@@ -39,8 +40,18 @@ export default class AllOrganizationEndorser extends Component {
       <LoadComp />
     ) : (
       <div className="admin">
-        <h2 className="card-heading">Registered Organization</h2>
-        <br />
+          <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h1>All Registered Organisations </h1>
+    </div>
+    {/* <div class="flip-box-back">
+      <h2>Back Side</h2>
+    </div> */}
+  </div>
+  
+</div>
+        <br /> <br />
         {this.state.orgends?.map((orgend, index) => (
           <OrgEndCard key={index} OrgEndContractAddress={orgend} />
         ))}

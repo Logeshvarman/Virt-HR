@@ -8,10 +8,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background:white ;  */
-  color: #ff5e00 !important;
-  background-image: linear-gradient(to bottom, #537895, #09203f) !important;
   
+  /* background-image: linear-gradient(to left, #FFFFFF, #ffffff) !important; */
+  background-image: linear-gradient(to left,rgb(255, 255, 255),  rgb(255, 255, 255)) !important;
 }
 
 code {

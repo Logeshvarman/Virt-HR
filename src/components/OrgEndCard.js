@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./OrgEndCard.css";
 import OrgEnd from "../abis/OrganizationEndorser.json";
-import { Card } from "semantic-ui-react";
+import { Card, Grid } from "semantic-ui-react";
 
 export default class OrgEndCard extends Component {
   state = {
@@ -40,9 +40,13 @@ export default class OrgEndCard extends Component {
 
   render() {
     return (
-      <Card className="organization-card">
+      <Grid columns={1} stackable>
+        <Grid.Column>
+      <Grid.Row>
+        
+          <Card className="organization-card">
         <Card.Content>
-        <span style={{borderStyle:"outset",borderColor:"black"}}>{this.state.orgEndInfo?.name}</span>
+        <span style={{borderColor:"black"}}>{this.state.orgEndInfo?.name}</span>
           <Card.Header>
          
             
@@ -76,6 +80,12 @@ export default class OrgEndCard extends Component {
           </div>
         </Card.Content>
       </Card>
+      </Grid.Row>
+        </Grid.Column>
+        
+     
+    </Grid>
+      
     );
   }
 }

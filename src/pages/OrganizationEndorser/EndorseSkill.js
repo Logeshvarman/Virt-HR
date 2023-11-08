@@ -95,7 +95,7 @@ export default class EndorseSkil extends Component {
           closeScanQRModal={this.closeScanQRModal}
           handleAddAddress={this.handleAddAddress}
         />
-        <div className="endorse-section">
+        <div className="import">
           <Card className="card-style">
             <Card.Content>
               <Card.Header>

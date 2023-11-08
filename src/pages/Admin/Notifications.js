@@ -59,7 +59,8 @@ export default class NotificationsAdmin extends Component {
                       maxHeight: "70vh",
                       overflow: "auto",
                       overflowX: "clip",
-                      paddingRight: "7px",
+                      paddingRight: "0px",
+                      
                     }}
                   >
                     <Table.Body className="sidechat-body">

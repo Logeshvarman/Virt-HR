@@ -109,11 +109,12 @@ export default class ChatBody extends Component {
           org={this.props.org}
         />
         <div style={{ marginTop: "7px" }}>
-          <div
+          <div 
             style={{
               display: "flex",
               justifyContent: "space-between",
               cursor: "pointer",
+              
             }}
             onClick={() => this.setState({ infomaodal: true })}
           >
