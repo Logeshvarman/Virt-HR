@@ -5,7 +5,7 @@
 Virt-HR is creating value for the entire ecosystem through the Trust as a Service (TaaS) platform. The Virt-HR system stores career information in a hashed, immutable form on a public blockchain. 
 
 Virt-HR also allows candidates, universities, and Recruiters to sign transactions onto a blockchain network.
-
+ 
 ## stacks
 
 
