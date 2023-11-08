@@ -6,12 +6,14 @@ import {
   Form,
   Input,
   Message,
+  Divider,
 } from "semantic-ui-react";
 import "./EndorsePage.css";
 import Admin from "../../abis/Admin.json";
 import Employee from "../../abis/Employee.json";
 import { toast } from "react-toastify";
 import ScanQR from "../../components/ScanQR";
+import EndorseSkil from "./EndorseSkill";
 
 export default class Endorse extends Component {
   state = {
@@ -120,12 +122,19 @@ export default class Endorse extends Component {
 
   render() {
     return (
+     
       <>
+      <div className="import">
+        <EndorseSkil />
+        </div>
+        <Divider vertical  ></Divider>
         <ScanQR
           isOpen={this.state.scanQR}
           closeScanQRModal={this.closeScanQRModal}
           handleAddAddress={this.handleAddAddress}
         />
+        
+        
         <div className="endorse-section">
           <Card className="card-style">
             <Card.Content>
@@ -197,8 +206,11 @@ export default class Endorse extends Component {
               </div>
             </Card.Content>
           </Card>
+          
         </div>
+        
       </>
+      
     );
   }
 }

@@ -57,7 +57,7 @@
             style={{
               borderRadius: "0",
               boxShadow: "0 0 5px 0px black",
-              background: "#F5F7FF",
+              background: "#003134",
             }}
           >
             <Menu
@@ -91,7 +91,8 @@
                 vertical
                 inverted
                 style={{
-                  background:"#111643",
+                  background:"#02b873",
+                  width:"120px",
                 }}
               >
              <div
@@ -103,32 +104,32 @@
                     alignItems: "center",
                     justifyContent: "space-between",
                     height: "50px",
-                    width: "150px",
+                    width: "100px",
                     borderRadius: "90%",
-                    padding: "25px",
+                    paddingLeft: "17px",
                     marginBottom: "-5px",
                     marginTop: "12px  ",
                   }}
                 >
-                  <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
+                  <Image src="https://violet-wrong-platypus-972.mypinata.cloud/ipfs/QmTbsJeqs6zZkvXPR7eTfLuQCCAZC4BqYGWaayVJWCZQDc?_gl=1*ldq2ah*_ga*MTcxMzMyMDk5LjE2OTkyNTU2Nzc.*_ga_5RMPXG14TE*MTY5OTI2NzkyMC4yLjEuMTY5OTI2NzkyNy41My4wLjA." />
                 </div>
                 
-                <div  style={{marginTop:"20px",}}>
-                <Item as={Link} to="/" name="Candidates" className="sidebar-item">
-                  <i className="user circle icon"></i>
+                <div   className="sidebar-item" style={{marginTop:"20px",}}>
+                <Item as={Link} to="/" name="Candidates" >
+                  <i className="user circle icon"   ></i>
                   Candidates
                 </Item>
                 
                 <Item as={Link} to="/all-organization-endorser" name="Organisation">
-                  <i className="id card outline icon"></i>
+                  <i className="id card outline icon"  ></i>
                   Organisation
                 </Item>
                 <Item as={Link} to="/create-user" name="Create User">
-                  <i className="user plus icon"></i>
+                  <i className="user plus icon" ></i>
                   Create User
                 </Item>
-                <Item as={Link} to="/notifications" name="Ping">
-                  <i className="envelope outline icon"></i>
+                <Item as={Link} to="/notifications" name="Ping" >
+                  <i className="envelope outline icon" ></i>
                   Ping
                 </Item>
                 </div>
@@ -136,30 +137,35 @@
              )}
 
              {this.state.role === 1 && (
-                <Sidebar
-                as={Menu}
-                animation="overlay"
-                width="thin"
-                visible
-                icon="labeled"
-                vertical
-                inverted
-              >
+               <Sidebar
+               as={Menu}
+               animation="overlay"
+               width="thin"
+               visible
+               icon="labeled"
+               vertical
+               inverted
+               style={{
+                 background:"#02b873",
+                 width:"120px",
+               }}
+             >
                <div
-                  style={{ 
+                  style={{
+                    
                     display: "flex",
                     justifyItems: "center",
                     alignItems: "center",
                     justifyContent: "space-between",
                     height: "50px",
-                    width: "150px",
-                    borderRadius: "100%",
-                    padding: "25px",
+                    width: "100px",
+                    borderRadius: "90%",
+                    paddingLeft: "17px",
                     marginBottom: "-5px",
-                    marginTop: "12px  "
+                    marginTop: "12px  ",
                   }}
                 >
-                  <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
+                  <Image src="https://violet-wrong-platypus-972.mypinata.cloud/ipfs/QmTbsJeqs6zZkvXPR7eTfLuQCCAZC4BqYGWaayVJWCZQDc?_gl=1*ldq2ah*_ga*MTcxMzMyMDk5LjE2OTkyNTU2Nzc.*_ga_5RMPXG14TE*MTY5OTI2NzkyMC4yLjEuMTY5OTI2NzkyNy41My4wLjA." />
                 </div>
                 <div style={{marginTop:"30px"}}>
                 <Item as={Link} to="/" name="Profile">
@@ -180,32 +186,34 @@
               )}
 
               {this.state.role === 2 && (
-                <Sidebar
-                as={Menu}
-                animation="overlay"
-                width="thin"
-                visible
-                icon="labeled"
-                vertical
-                inverted
-              >
+               <Sidebar
+               as={Menu}
+               animation="overlay"
+               width="thin"
+               visible
+               icon="labeled"
+               vertical
+               inverted
+               style={{
+                 background:"#02b873",
+                 width:"120px",
+               }}
+             >
              <div
-                  style={{
-                    
-                    display: "flex",
-                    justifyItems: "center",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    height: "50px",
-                    width: "150px",
-                    borderRadius: "100%",
-                    padding: "25px",
-                    marginBottom: "-5px",
-                    marginTop: "12px  "
-                    
-                  }}
+                 style={{
+                  display: "flex",
+                  justifyItems: "center",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  height: "50px",
+                  width: "100px",
+                  borderRadius: "90%",
+                  paddingLeft: "17px",
+                  marginBottom: "-5px",
+                  marginTop: "12px  ",
+                }}
                 >
-                  <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
+                  <Image src="https://violet-wrong-platypus-972.mypinata.cloud/ipfs/QmTbsJeqs6zZkvXPR7eTfLuQCCAZC4BqYGWaayVJWCZQDc?_gl=1*ldq2ah*_ga*MTcxMzMyMDk5LjE2OTkyNTU2Nzc.*_ga_5RMPXG14TE*MTY5OTI2NzkyMC4yLjEuMTY5OTI2NzkyNy41My4wLjA." />
                 </div>
                 <div style={{marginTop:"30px"}}>
                 <Item as={Link} to="/" name="Info Page">
@@ -213,10 +221,10 @@
                   Info Page
                 </Item>
                 
-                <Item as={Link} to="/endorse-skill" name="endorseskill">
+                {/* <Item as={Link} to="/endorse-skill" name="endorseskill">
                   <i className="building icon"></i>
                   endorse-skill
-                </Item>
+                </Item> */}
 
                 <Item as={Link} to="/endorse-section" name="endorse-section">
                   <i className="user plus icon"></i>
@@ -240,24 +248,27 @@
                 icon="labeled"
                 vertical
                 inverted
+                style={{
+                  background:"#02b873",
+                  width:"120px",
+                }}
               >
              <div
-                  style={{
+                 style={{
                     
-                    display: "flex",
-                    justifyItems: "center",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    height: "50px",
-                    width: "150px",
-                    borderRadius: "100%",
-                    padding: "25px",
-                    marginBottom: "-5px",
-                    marginTop: "12px  "
-                    
-                  }}
+                  display: "flex",
+                  justifyItems: "center",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  height: "50px",
+                  width: "100px",
+                  borderRadius: "90%",
+                  paddingLeft: "17px",
+                  marginBottom: "-5px",
+                  marginTop: "12px  ",
+                }}
                 >
-                  <Image src="https://companieslogo.com/img/orig/VRTU_BIG-6de44a1b.png?t=1603138555" />
+                  <Image src="https://violet-wrong-platypus-972.mypinata.cloud/ipfs/QmTbsJeqs6zZkvXPR7eTfLuQCCAZC4BqYGWaayVJWCZQDc?_gl=1*ldq2ah*_ga*MTcxMzMyMDk5LjE2OTkyNTU2Nzc.*_ga_5RMPXG14TE*MTY5OTI2NzkyMC4yLjEuMTY5OTI2NzkyNy41My4wLjA." />
                 </div>
                 <div style={{marginTop:"30px"}}>
                
@@ -277,7 +288,7 @@
               )} 
 
               <Menu.Item position="right">
-                <Label style={{ color: "black", background: "white" }}>
+                <Label style={{ color: "#FFFFFF", background: "#02b873"  }}>
                   <a
                   style={{ cursor: "pointer"}}
                   onClick={() => {if (this.state.showAccount) {
@@ -286,11 +297,11 @@
                     this.setState({ showAccount: true });
                   } }}
                   >
-                    {this.state.role === -1 ? "No Role" : roles[this.state.role]}
+                    {this.state.role === -1 ? "No Role" : roles[this.state.role]} 
                   </a>
                 </Label>
                 &nbsp;&nbsp;&nbsp;
-                <div style={{ color: "lightblue" }} hidden={!this.state.showAccount}>
+                <div style={{ color: "#FFFFFF" }} hidden={!this.state.showAccount}>
                   <em>
                     <small>{this.state.account}</small>
                   </em>

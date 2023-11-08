@@ -41,18 +41,30 @@ export default class AllEmployees extends Component {
       <LoadComp />
     ) : (
       <div className="admin">
-        <h2 className="card-heading">All Registered Candidate</h2>
-        <br />
-        <br />
+       
+        <div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h1>All Registered Candidates </h1>
+    </div>
+    <div class="flip-box-back">
+      <h2>Back Side</h2>
+    </div>
+  </div>
+  
+</div>
+        
+        <br/>
+        <br/>
         <div className="card-grid">
-        {this.state.employees?.map((employee, index) => (
+             {this.state.employees?.map((employee, index) => (
           
             <EmployeeCard key={index} employeeContractAddress={employee} />
           
           
-        ))}
+          ))}
         
-        <br />
+           <br />
         </div>
       </div>
     );

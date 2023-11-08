@@ -4,7 +4,10 @@
 }
 
 .notifications {
-  background: rgba(31, 30, 30, 0.581);
+  /* background: rgba(31, 30, 30, 0.581); */
+  background-image: url(/src/Assets/card_bg.png);
+  background-size: cover;
+  background-position: center;
   width: 85%;
   margin-left: auto;
   margin-right: auto;

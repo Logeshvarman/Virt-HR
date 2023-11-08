@@ -1,0 +1,11 @@
+.sidebar-item i  {
+    color: white;
+  }
+
+  .item{
+    color: white;
+  }
+
+  .menu-item-text {
+    filter: brightness(0.8) contrast(1.2);
+  }

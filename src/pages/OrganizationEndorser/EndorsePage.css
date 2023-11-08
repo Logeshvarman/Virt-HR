@@ -1,13 +1,15 @@
 .endorse-section {
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  margin-top: 40px;
+  margin-top: 1px;
+  margin-left: 300px;
+  
 }
 
 .form-inputs > input,
@@ -63,4 +65,8 @@
 
 .pos-middle-qr {
   text-align: center;
+}
+.import{
+  margin-top: 50px;
+  margin-left: 50px;
 }

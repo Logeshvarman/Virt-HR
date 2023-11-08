@@ -91,7 +91,8 @@ export default class SearchBar extends Component {
           value={value}
           placeholder="Search"
           style={{
-            minWidth: "300px",
+            minWidth: "200px",
+            
           }}
           className="searchbar"
         />
